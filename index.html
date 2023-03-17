@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    
+   <style>
+        body {
+        background-color: #EBEBF3;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        height: 400px;
+        width: 300px;
+        margin-top: 120px;
+        border-radius: 15px;
+
+    }
+    .card-header{
+        height: 180px;
+        background-color:#002B5B;
+    }
+    .card-body{
+        color: black;
+    }
+
+    button{
+        margin-top: 65px;
+        margin-left: 80px;
+    }
+    p{
+        font-size: 15px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        display: block;
+    }
+
+    .info{
+        margin-top: 50px;
+        margin-left: 50px;
+        display: flex;
+    
+    }
+    .info:hover{
+        cursor: pointer;
+        text-decoration: underline;
+        color: grey;
+    
+    }
+</style>
+
+<script>
+    function opentabs(){
+        for(i=1; i<=3; i++){
+            window.open("https://www.youtube.com/");
+            console.log("tabs initiated");
+        }
+    }
+</script>
+
+</head>
+<body>
+    <p class="info"><span class="bi bi-info-circle-fill"> Press below button to open 101 Youtube Tabs.</span></p>
+    <main>
+        <section>
+            <div class="card">
+                <div class="card-header">
+                    <button onclick="opentabs()" class="btn btn-danger"><span class="bi bi-youtube"></span> YouTube</button>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Please note that this code may not work on some browsers due to pop-up blocking setting. You may need to adjust your browser preference to allow multiple tabs to open at once. Also opening 101 tabs at once may slow down your device or cause it to crash. Use this code at your own risk.😅
+
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
